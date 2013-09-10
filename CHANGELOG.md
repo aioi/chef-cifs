@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of cifs.
 
+## 0.1.1:
+
+* Fix license
+
 ## 0.1.0:
 
 * Initial release of cifs
