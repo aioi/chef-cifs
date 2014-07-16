@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of cifs.
 
+## 0.1.2:
+
+* Don't crash when the password databag is not present
+* Add test suite (test-kitchen, berkshelf, rubocop)
+
 ## 0.1.1:
 
 * Fix license
