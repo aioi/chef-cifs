@@ -35,7 +35,7 @@ package pkg
 
 # Credentials files
 bag = node['cifs']['password_data_bag']
-credentials = Chef::EncryptedDataBagItem.load(bag, 'cifs')
+credentials = Chef::EncryptedDataBagItem.load(bag, 'cifs') rescue nil
 
 if credentials
   template node['cifs']['credential_file'] do
@@ -49,4 +49,6 @@ if credentials
       :password => credentials['password']
     )
   end
+else
+  Chef::Log.warn("Data bag '#{bag}' not found, skipping credentials file")
 end
