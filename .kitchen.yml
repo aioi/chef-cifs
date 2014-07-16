@@ -1,0 +1,23 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+  data_path: test/shared
+
+platforms:
+  - name: ubuntu-12.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[apt]
+      - recipe[cifs::default]
+    attributes:
+  - name: with_databag
+    run_list:
+      - recipe[apt]
+      - recipe[cifs::default]
+    attributes:
+    encrypted_data_bag_secret_key_path: 'test/shared/encrypted_data_bag_secret'
