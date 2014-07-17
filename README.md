@@ -1,6 +1,8 @@
 cifs Cookbook
 =============
-This cookbook install and configure CIFS
+[![Build Status](https://travis-ci.org/aioi/chef-cifs.png?branch=master)](https://travis-ci.org/aioi/chef-cifs)
+
+This cookbook install and configure CIFS.
 
 Requirements
 ------------

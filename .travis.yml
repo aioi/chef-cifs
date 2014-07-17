@@ -1,0 +1,8 @@
+language: ruby
+bundler_args: --without integration
+script:
+  - bundle exec foodcritic -f any .
+  - bundle exec rubocop
+rvm:
+  - 1.9.3
+  - 2.1.1
