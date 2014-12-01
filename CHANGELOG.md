@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of cifs.
 
+## 0.1.3 (2014-12-01)
+
+* Add Travis CI integration
+* Fix ever-expanding default_mount_options
+* Fix crash when cifs::mount is called without any mounts being set
+* Update tests for new serverspec version
+
 ## 0.1.2:
 
 * Don't crash when the password databag is not present
