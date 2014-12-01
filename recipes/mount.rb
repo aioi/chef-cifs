@@ -17,8 +17,10 @@
 # limitations under the License.
 #
 
-default_options = node['cifs']['default_mount_options']
-default_options << ",credentials=#{node['cifs']['credential_file']}"
+default_options = [
+  node['cifs']['default_mount_options'],
+  "credentials=#{node['cifs']['credential_file']}"
+].join(',')
 
 node['cifs']['mounts'].each_pair do |path, config|
   directory path
