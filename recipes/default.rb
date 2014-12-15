@@ -44,7 +44,8 @@ if credentials
 
     variables(
       :username => credentials['username'],
-      :password => credentials['password']
+      :password => credentials['password'],
+      :domain => credentials['domain']
     )
   end
 else
