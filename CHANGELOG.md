@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of cifs.
 
+## 0.1.4 (2014-12-15)
+
+* Ability to specify the domain in the credential file
+
 ## 0.1.3 (2014-12-01)
 
 * Add Travis CI integration
