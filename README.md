@@ -6,7 +6,7 @@ This cookbook install and configure CIFS.
 
 Requirements
 ------------
-Should work on ubuntu systems.
+Should work on Ubuntu or Debian systems.
 
 Attributes
 ----------
