@@ -25,6 +25,8 @@ when 'ubuntu'
   else
     pkg = 'cifs-utils'
   end
+when 'debian'
+  pkg = 'cifs-utils'
 else
   Chef::Log.fatal("#{node['platform']} not supported")
 end
