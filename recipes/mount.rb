@@ -31,5 +31,6 @@ node['cifs']['mounts'].each_pair do |path, config|
     fstype 'cifs'
     options options
     action [:mount, :enable]
+    not_if "grep #{path} /proc/mounts"
   end
 end
